@@ -1,0 +1,8 @@
+name: my-app
+services:
+  - name: web
+    environment_slug: node-js
+    build:
+      buildpacks:
+        - digitalocean/node
+    run_command: npm start
