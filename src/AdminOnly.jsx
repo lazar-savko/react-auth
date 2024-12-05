@@ -9,7 +9,7 @@ const AdminOnly = () => {
   useEffect(() => {
     const fetchAdminContent = async () => {
       try {
-        const response = await fetch('http://localhost:5000/adminonly', {
+        const response = await fetch('https://seal-app-hreq9.ondigitalocean.app/adminonly', {
           headers: { Authorization: `Bearer ${token}` }
         });
         
